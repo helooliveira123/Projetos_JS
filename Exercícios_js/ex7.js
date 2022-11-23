@@ -17,21 +17,25 @@ function mostrar(){
 }
 
 function maior(){
+    let res1=document.getElementById('res1');
+    res1.innerHTML="";
     var maior = lista[0];
     for(i=1; i<lista.length; i++){
         if (lista[i] > maior){
             maior=lista[i];
         }
     }
-    alert("O maior número é "+maior);
+    res1.innerHTML="O maior número é "+maior;
 }
 
 function menor(){
+    let res2=document.getElementById('res2');
+    res2.innerHTML="";
     var menor = lista[0];
     for(i=1; i<lista.length; i++){
         if (lista[i] < menor){
             menor=lista[i];
         }
     }
-    alert("O maior número é "+menor);
+    res2.innerHTML="O menor número é "+menor;
 }
