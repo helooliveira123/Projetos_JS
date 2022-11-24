@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual o seu peso ideal?</h1>
+    <form action="" method="post">
+        Digite sua altura: <input type="text" id="h"><br>
+        Selecione o seu sexo:
+        <select id="select" onchange="selected()">
+            <option value="" selected></option>
+            <option value="F">Feminino</option>
+            <option value="M">Masculino</option>
+        </select><br>
+        <input type="button" value="Calcular" onclick="calcular()">
+    </form>
+    <h4 id="res"></h4>
+
+    <script src="ex6.js"></script>
+</body>
+</html>
